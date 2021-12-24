@@ -2,6 +2,10 @@
 
 using namespace std;
 
+template <typename typ>
+typ mySwap(typ &,typ &);
+
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +34,12 @@ int main(){
 	return 0;
 }
 
+template <typename typ>
+typ mySwap(typ &x,typ &y){
+	typ z = x;
+	 x=y;
+	 y=z;
+	return x;
+	return y;
+}
+    
